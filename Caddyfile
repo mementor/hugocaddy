@@ -15,4 +15,6 @@ d.mne.li {
   root /srv/sharer
   log stdout
   tls debiboon@gmail.com
+  mime {
+    .mp4 video/mp4
 }

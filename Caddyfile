@@ -1,16 +1,3 @@
-http://blog.mne.li {
-  root /srv/blog
-  log stdout
-  gzip
-  tls debiboon@gmail.com
-
-  git github.com/mementor/mentoblog {
-    path ../mentoblog
-    then hugo --destination=/srv/blog
-    interval 300
-  }
-}
-
 d.mne.li {
   root /srv/sharer
   log stdout

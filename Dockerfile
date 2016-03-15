@@ -22,8 +22,6 @@ RUN apk add --update musl \
     && bin/caddyext build bin/ \
     && mv $GOPATH/bin/customCaddy /bin/caddy \
     && mkdir /caddy \
-    && go get github.com/spf13/hugo \
-    && mv $GOPATH/bin/hugo /bin/hugo \
     && apk del --purge mercurial go \
     && rm -rf $GOPATH /var/cache/apk/* \
     && printf "0.0.0.0" > /etc/Caddyfile
